@@ -10,10 +10,16 @@ hamburger.addEventListener('click', () => {
 
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
-	if (scroll_position > 250) {
-		header.style.backgroundColor = '#29323c';
+	if (scroll_position > 100) {
+		// header.style.backgroundImage = 'linear-gradient(45deg, #3269fd 15%, #fd8770 50%, #fff64b 80%)'; //#fd8770, #c1c1c0
+    // header.style.backgroundImage = 'linear-gradient(45deg, #ef854a 15%, #3269fd 50%, #fff64b 80%)'; //option 2
+    // header.style.backgroundImage = 'linear-gradient(45deg, #fff64b 15%, #3269fd 50%, #ef854a 80%)'; //option 3
+    header.style.backgroundImage = 'linear-gradient(45deg, #fff64b, #c1c1c0, #ddbbe1, #3269fd)'; //#cdb5e7, #ddbbe1
+
+
 	} else {
-		header.style.backgroundColor = 'transparent';
+		header.style.backgroundImage = 'none';  // Reset the background image
+    header.style.backgroundColor = 'transparent';
 	}
 });
 
